@@ -3,8 +3,14 @@ import random
 import names
 import emoji
 
-possible_animals = [':mouse:', ':hamster:', ':rabbit:', ':koala:', 
-                    ':frog:', ':monkey:', ':panda_face:', ':fish:']
+possible_animals = {'mouse': ':mouse:',
+                    'hamster': ':hamster:',
+                    'rabbit': ':rabbit:',
+                    'koala': ':koala:',
+                    'frog': ':frog:',
+                    'monkey': ':monkey:',
+                    'panda': ':panda_face:',
+                    'fish': ':fish:'}
 
 
 class AbstractAnimal(object):
@@ -13,7 +19,7 @@ class AbstractAnimal(object):
     heart = ':heartpulse:'
     sad = ':broken_heart:'
 
-    def __init__(self, name):
+    def __init__(self, name, species):
         self.name = name
         self.age = random.randrange(1, 15)
         self.obedience_level = random.randrange(0, 10)
@@ -48,6 +54,7 @@ class AbstractAnimal(object):
     def __sub__(self, other):
         """What happens when you subtract two animals"""
 
+        pass
 
     def __mul__(self, other):
         """What happens when you multiply two animals"""
@@ -59,10 +66,12 @@ class AbstractAnimal(object):
             return "cannot breed {} due to animal being spayed/neutered".format((self.species + 's'))
 
         print emoji.emojize(self.heart, use_aliases=True) * 2
+
         litter_size = random.randrange(0, 5)
         litter = []
+
         for baby in range(litter_size):
-            b = Cat(names.get_first_name())
+            b = self.__class__(names.get_first_name(), self.species)
             b.age = 0
             litter.append(b)
 
@@ -88,8 +97,8 @@ class Cat(AbstractAnimal):
     heart = ':heart_eyes_cat:'
     sad = ':crying_cat_face:'
 
-    def __init__(self, name):
-        super(Cat, self).__init__(name)
+    def __init__(self, name, species='cat'):
+        super(Cat, self).__init__(name, self.species)
         self.purr_level = random.randrange(0, 10)
 
 
@@ -101,10 +110,9 @@ class Dog(AbstractAnimal):
     # emojis
     smile = ':dog:'
 
-
-    def __init__(self, name):
+    def __init__(self, name, species='dog'):
+        super(Dog, self).__init__(name, self.species)
         self.loyality_level = random.randrange(0, 10)
-        super(Dog, self).__init__(name)
 
 
 class Animal(AbstractAnimal):
@@ -114,8 +122,8 @@ class Animal(AbstractAnimal):
     species = ""
     # emojis
 
-
-    def __init__(self, name):
-        super(Animal, self).__init__(name)
-        self.smile = random.choice(possible_animals)
-
+    def __init__(self, name, species=''):
+        super(Animal, self).__init__(name, self.species)
+        if self.species == '':
+            self.species = random.choice(possible_animals.keys())
+        self.smile = possible_animals[self.species]
