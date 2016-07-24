@@ -1,6 +1,7 @@
 blessings==1.6
 bpython==0.15
 curtsies==0.2.6
+emoji==0.3.9
 greenlet==0.4.10
 names==0.3.0
 Pygments==2.1.3

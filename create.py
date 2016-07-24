@@ -3,15 +3,6 @@ import random
 import names
 import emoji
 
-possible_animals = {'mouse': ':mouse:',
-                    'hamster': ':hamster:',
-                    'rabbit': ':rabbit:',
-                    'koala': ':koala:',
-                    'frog': ':frog:',
-                    'monkey': ':monkey:',
-                    'panda': ':panda_face:',
-                    'fish': ':fish:'}
-
 
 class AbstractAnimal(object):
     """The idea of an animal"""
@@ -30,6 +21,7 @@ class AbstractAnimal(object):
         self.best_friends = set()
         self.frenemies = set()
         self.spay_or_neuter = False
+        self.species = species
 
     def __repr__(self):
         """Provides useful represenation when printed"""
@@ -40,7 +32,7 @@ class AbstractAnimal(object):
     def __add__(self, other):
         """What happens when you add two animals"""
 
-        if self.cranky > 7:
+        if self.cranky > 7 or self.friendly < 3:
             self.mortal_enemy.add(other)
 
             return"{} is {} mortal enemy".format(other.name, (self.name + '\'s'))
@@ -112,7 +104,7 @@ class Dog(AbstractAnimal):
 
     def __init__(self, name, species='dog'):
         super(Dog, self).__init__(name, self.species)
-        self.loyality_level = random.randrange(0, 10)
+        self.loyality_level = random.randrange(5, 10)
 
 
 class Animal(AbstractAnimal):
@@ -120,10 +112,18 @@ class Animal(AbstractAnimal):
 
     greet = "hey"
     species = ""
-    # emojis
 
     def __init__(self, name, species=''):
-        super(Animal, self).__init__(name, self.species)
+        super(Animal, self).__init__(name, species)
         if self.species == '':
             self.species = random.choice(possible_animals.keys())
         self.smile = possible_animals[self.species]
+
+possible_animals = {'mouse': ':mouse:',
+                    'hamster': ':hamster:',
+                    'rabbit': ':rabbit:',
+                    'koala': ':koala:',
+                    'frog': ':frog:',
+                    'monkey': ':monkey:',
+                    'panda': ':panda_face:',
+                    'fish': ':fish:'}
