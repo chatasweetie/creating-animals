@@ -59,12 +59,17 @@ Run script using bpython in interactive mode
 > bpython -i create.py
 ```
 
-Create
+Create all the animals you'll like and have them become friends, mortal enemies, frenimeies and make new litters!
+
+example:
+```
+> luna = Cat('luna')
+```
 
 
 ### About the Developer    
 Jessica Dene Earley    
 [Short Bio](https://chatasweetie.wordpress.com/about-me/)   
 [Linkedin](https://www.linkedin.com/in/jessicaearley)    
-[Blog-Overloading Operators in Python](https://chatasweetie.com/category/rideminder/)     
+[Blog-Overloading Operators in Python](https://chatasweetie.com/)     
 [Chatasweetie's Blog](https://chatasweetie.com/)    
