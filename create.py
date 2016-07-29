@@ -1,4 +1,4 @@
-"""Creates Cats & Dogs"""
+"""Creates Animals"""
 import random
 import names
 import emoji
@@ -9,6 +9,9 @@ class AbstractAnimal(object):
 
     heart = ':heartpulse:'
     sad = ':broken_heart:'
+    anger = ':rage:'
+
+    frenemies = ':anguished:'
 
     def __init__(self, name, species):
         self.name = name
@@ -34,6 +37,7 @@ class AbstractAnimal(object):
 
         if self.cranky > 7 or self.friendly < 3:
             self.mortal_enemy.add(other)
+            print emoji.emojize(self.anger, use_aliases=True)
 
             return"{} is {} mortal enemy".format(other.name, (self.name + '\'s'))
 
@@ -46,7 +50,17 @@ class AbstractAnimal(object):
     def __sub__(self, other):
         """What happens when you subtract two animals"""
 
-        pass
+        if other in self.best_friends:
+            self.best_friends.remove(other)
+            self.frenemies.add(other)
+            print emoji.emojize(self.frenemies, use_aliases=True)
+            return"{} is now {} frenemy".format(other.name, (self.name + '\'s'))
+
+        self.mortal_enemy.add(other)
+
+        print emoji.emojize(self.anger, use_aliases=True)
+        return"{} is {} mortal enemy".format(other.name, (self.name + '\'s'))
+
 
     def __mul__(self, other):
         """What happens when you multiply two animals"""
