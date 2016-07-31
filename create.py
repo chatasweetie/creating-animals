@@ -10,8 +10,7 @@ class AbstractAnimal(object):
     heart = ':heartpulse:'
     sad = ':broken_heart:'
     anger = ':rage:'
-
-    frenemies = ':anguished:'
+    anguished = ':anguished:'
 
     def __init__(self, name, species):
         self.name = name
@@ -36,6 +35,9 @@ class AbstractAnimal(object):
         """What happens when you add two animals"""
 
         if self.cranky > 7 or self.friendly < 3:
+            if other in self.best_friends:
+                self.best_friends.remove(other)
+
             self.mortal_enemy.add(other)
             print emoji.emojize(self.anger, use_aliases=True)
 
@@ -53,7 +55,8 @@ class AbstractAnimal(object):
         if other in self.best_friends:
             self.best_friends.remove(other)
             self.frenemies.add(other)
-            print emoji.emojize(self.frenemies, use_aliases=True)
+            print emoji.emojize(self.anguished, use_aliases=True)
+
             return"{} is now {} frenemy".format(other.name, (self.name + '\'s'))
 
         self.mortal_enemy.add(other)

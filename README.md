@@ -10,7 +10,7 @@ Creating animal objects and overloading the operator where different operators h
 
 Create a animal object of your choosing - generic Animal, Cat or Dog. The object will have several characteristics that will influence what the operator will do. 
 
-Want more detail? Check out the blog post: [Overloading Operators in Python](https://chatasweetie.com/category/rideminder/)
+Want more detail? Check out the blog post: [Overloading Operators in Python](http://chatasweetie.com/2016/07/29/overloading-operators-in-python)
 
 
 ### Screenshot
@@ -71,5 +71,5 @@ example:
 Jessica Dene Earley    
 [Short Bio](https://chatasweetie.wordpress.com/about-me/)   
 [Linkedin](https://www.linkedin.com/in/jessicaearley)    
-[Blog-Overloading Operators in Python](https://chatasweetie.com/)     
+[Blog-Overloading Operators in Python](http://chatasweetie.com/2016/07/29/overloading-operators-in-python)     
 [Chatasweetie's Blog](https://chatasweetie.com/)    
