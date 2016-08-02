@@ -12,32 +12,31 @@ Create a animal object of your choosing - generic Animal, Cat or Dog. The object
 
 Want more details? 
 
-   Check out the blog post: [Overloading Operators in Python](http://chatasweetie.com/2016/07/29/overloading-operators-in-python)   
-
-   Check out the viedo: [Overloading Operators in Python](https://youtu.be/WtC-bkVHqig)
+   * Check out the blog post: [Overloading Operators in Python](http://chatasweetie.com/2016/07/29/overloading-operators-in-python)   
+   *Check out the viedo: [Overloading Operators in Python](https://youtu.be/WtC-bkVHqig)
 
 
 ### Screenshot
 
 **Making Cat Objects and using + and *:**
 
-<img src="/img/cats.png" height="300">
+<img src="/img/cats.png">
 
 **Making a Dog Object and using + and * with a Cat Object:**
 
-<img src="/img/dog.png" height="300">
+<img src="/img/dog.png">
 
 **Making a generic Animal object and using +:**
 
-<img src="/img/rabbit.png" height="300" >
+<img src="/img/rabbit.png">
 
 **Making a rabbit with the Animal class and using * and +:**
 
-<img src="/img/jane-rabbit.png" height="300">
+<img src="/img/jane-rabbit.png">
 
 **Objects keep track of who they are best friends with:**
 
-<img src="/img/bestfriends.png" height="300">
+<img src="/img/bestfriends.png">
 
 
 
