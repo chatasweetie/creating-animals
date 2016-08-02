@@ -10,30 +10,34 @@ Creating animal objects and overloading the operator where different operators h
 
 Create a animal object of your choosing - generic Animal, Cat or Dog. The object will have several characteristics that will influence what the operator will do. 
 
-Want more detail? Check out the blog post: [Overloading Operators in Python](http://chatasweetie.com/2016/07/29/overloading-operators-in-python)
+Want more details? 
+
+   Check out the blog post: [Overloading Operators in Python](http://chatasweetie.com/2016/07/29/overloading-operators-in-python)   
+
+   Check out the viedo: [Overloading Operators in Python](https://youtu.be/WtC-bkVHqig)
 
 
 ### Screenshot
 
-**Making Cat Objects and using + and * **
+**Making Cat Objects and using + and *:**
 
-<img src="/img/cat.jpg" height="300">
+<img src="/img/cats.png" height="300">
 
-**Making a Dog Object and using + and * with a Cat Object**
+**Making a Dog Object and using + and * with a Cat Object:**
 
-<img src="/img/dog.jpg" height="300">
+<img src="/img/dog.png" height="300">
 
-**Making a generic Animal object and using + **
+**Making a generic Animal object and using +:**
 
-<img src="/img/rabbit.jpg" height="300" >
+<img src="/img/rabbit.png" height="300" >
 
-**Making a rabbit with the Animal class and using * and + **
+**Making a rabbit with the Animal class and using * and +:**
 
-<img src="/img/jane-rabbit.jpg" height="300">
+<img src="/img/jane-rabbit.png" height="300">
 
-**Objects keep track of who they are best friends with  **
+**Objects keep track of who they are best friends with:**
 
-<img src="/img/bestfriends.jpg" height="300">
+<img src="/img/bestfriends.png" height="300">
 
 
 
