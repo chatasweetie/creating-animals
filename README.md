@@ -12,7 +12,7 @@ Create a animal object of your choosing - generic Animal, Cat or Dog. The object
 
 Want more details? 
 
-   * Check out the blog post: [Overloading Operators in Python](http://chatasweetie.com/2016/07/29/overloading-operators-in-python)   
+   * Check out the blog post: [Overloading Operators in Python](https://chatasweetie.com/2016/08/11/overloading-operators-in-python/)   
    *Check out the viedo: [Overloading Operators in Python](https://youtu.be/WtC-bkVHqig)
 
 
@@ -74,5 +74,5 @@ example:
 Jessica Dene Earley    
 [Short Bio](https://chatasweetie.wordpress.com/about-me/)   
 [Linkedin](https://www.linkedin.com/in/jessicaearley)    
-[Blog-Overloading Operators in Python](http://chatasweetie.com/2016/07/29/overloading-operators-in-python)     
+[Blog-Overloading Operators in Python](https://chatasweetie.com/2016/08/11/overloading-operators-in-python/)     
 [Chatasweetie's Blog](https://chatasweetie.com/)    
