@@ -13,7 +13,7 @@ Create a animal object of your choosing - generic Animal, Cat or Dog. The object
 Want more details? 
 
    * Check out the blog post: [Overloading Operators in Python](https://chatasweetie.com/2016/08/11/overloading-operators-in-python/)   
-   *Check out the viedo: [Overloading Operators in Python](https://youtu.be/WtC-bkVHqig)
+   *Check out the video: [Overloading Operators in Python](https://youtu.be/WtC-bkVHqig)
 
 
 ### Screenshot
